@@ -1,0 +1,87 @@
+{
+  "name": "@chahindb7/vue3-google-maps",
+  "version": "1.1.2",
+  "description": "A set of composable components for easy use of Google Maps in your Vue 3 projects. (modified by Chahin).",
+  "type": "module",
+  "main": "dist/vue3-google-maps.umd.js",
+  "module": "dist/vue3-google-maps.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue3-google-maps.es.js",
+      "require": "./dist/vue3-google-maps.umd.js"
+    },
+    "./themes": {
+      "import": "./dist/themes/index.mjs",
+      "require": "./dist/themes/index.cjs",
+      "types": "./dist/types/themes/index.d.ts"
+    },
+    "./style": "./dist/vue3-google-maps.css",
+    "./nuxt": "./nuxt/index.ts"
+  },
+  "types": "dist/vue3-google-maps.d.ts",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "nuxt",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.8",
+    "@googlemaps/markerclusterer": "^2.5.3"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@nuxt/kit": "^3.15.1",
+    "@nuxt/types": "^2.18.1",
+    "@types/google.maps": "^3.58.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "eslint": "^9.14.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.1.6",
+    "vite": "^6.0.1",
+    "vite-plugin-vue-devtools": "^7.6.5"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "keywords": [
+    "vue",
+    "plugin",
+    "component",
+    "google",
+    "maps",
+    "google-maps"
+  ],
+  "author": "Chahin <chahindb7@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChahinDB7/vue3-google-maps.git"
+  },
+  "homepage": "https://github.com/ChahinDB7/vue3-google-maps#readme",
+  "bugs": {
+    "url": "https://github.com/ChahinDB7/vue3-google-maps/issues"
+  }
+}
